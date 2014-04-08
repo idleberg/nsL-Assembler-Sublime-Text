@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>nsl</string>
+	</array>
+
+	<key>name</key>
+	<string>nsL Assembler</string>
+	<key>patterns</key>
+	<array>
+
+		<dict>
+			<key>match</key>
+			<string>(\b|^\s*)(?i)#(define|else|endif|if|macro|macroend|nsis|nsisend|return)\b</string>
+			<key>name</key>
+			<string>string.compiler.nsl</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(\b|^\s*)(?i)(Abort|AddBrandingImage|AddSize|AllowRootDirInstall|AllowSkipFiles|AutoCloseWindow|BGFont|BGGradient|BrandingText|BringToFront|CRCCheck|Call|Caption|ChangeUI|CheckBitmap|ClearErrors|CompletedText|ComponentText|CopyFiles|CreateDirectory|CreateFont|CreateShortCut|DeleteINISec|DeleteINIStr|Delete|DeleteRegKey|DeleteRegValue|DetailPrint|DetailsButtonText|DirText|DirVar|DirVerify|EnableWindow|EnumRegKey|EnumRegValue|Exch|Exec|ExecShell|ExecWait|ExpandEnvStrings|FileBufSize|FileClose|FileErrorText|File|FileOpen|FileReadByte|FileRead|FileRecursive|FileSeek|FileWriteByte|FileWrite|FindClose|FindFirst|FindNext|FindWindow|FlushINI|GetCurInstType|GetCurrentAddress|GetDLLVersion|GetDLLVersionLocal|GetDlgItem|GetErrorLevel|GetFileTime|GetFileTimeLocal|GetFunctionAddress|GetInstDirError|GetLabelAddress|GetTempFileName|HideWindow|Icon|IfAbort|IfErrors|IfFileExists|IfRebootFlag|IfSilent|InitPluginsDir|InstProgressFlags|InstTypeGetText|InstType|InstTypeSetText|InstallButtonText|InstallColors|InstallDir|InstallDirRegKey|IntFmt|IsWindow|LangString|LicenseBkColor|LicenseData|LicenseForceSelection|LicenseLangString|LicenseText|LoadLanguageFile|LockWindow|LogSet|LogText|MessageBox|MiscButtonText|Name|OutFile|Pop|Push|Quit|RMDir|RMDirRecursive|ReadEnvStr|ReadINIStr|ReadRegDWORD|ReadRegStr|Reboot|RegDLL|Rename|RequestExecutionLevel|ReserveFile|ReserveFileRecursive|SearchPath|SectionGetFlags|SectionGetInstTypes|SectionGetSize|SectionGetText|SectionIn|SectionSetFlags|SectionSetInstTypes|SectionSetSize|SectionSetText|SendMessage|SetAutoClose|SetBrandingImage|SetCompress|SetCompressorDictSize|SetCompressor|SetCtlColors|SetCurInstType|SetDatablockOptimize|SetDateSave|SetDetailsPrint|SetDetailsView|SetErrorLevel|SetErrors|SetFileAttributes|SetFont|SetOutPath|SetOverwrite|SetRebootFlag|SetRegView|SetShellVarContext|SetSilent|ShowInstDetails|ShowUninstDetails|ShowWindow|SilentInstall|SilentUninstall|Sleep|SpaceTexts|StrCmp|StrCmpS|StrCpy|StrLen|SubCaption|UnRegDLL|UninstallButtonText|UninstallCaption|UninstallIcon|UninstallSubCaption|UninstallText|VIAddVersionKey|VIProductVersion|WindowIcon|WriteINIStr|WriteRegBin|WriteRegDWORD|WriteRegExpandStr|WriteRegStr|WriteUninstaller|XPStyle)\b</string>
+			<key>name</key>
+			<string>keyword.command.nsl</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\w+\:\:\w+</string>
+			<key>name</key>
+			<string>keyword.function.nsl</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(\b|^\s*)(?i)(break|case|default|do|else|for|function|if|page|return|section|switch|uninstall function|uninstall page|uninstall section|while)\b</string>
+			<key>name</key>
+			<string>support.function.nsl</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(\b|^\s*)(?i)(MB_DEFBUTTON1|MB_DEFBUTTON2|MB_DEFBUTTON3|MB_DEFBUTTON4|MB_ICONEXCLAMATION|MB_ICONINFORMATION|MB_ICONQUESTION|MB_ICONSTOP|MB_OK|MB_OKCANCEL|MB_RETRYCANCEL|MB_RIGHT|MB_RTLREADING|MB_SETFOREGROUND|MB_TOPMOST|MB_USERICON|MB_YESNO|MB_YESNOCANCEL|IDABORT|IDCANCEL|IDIGNORE|IDNO|IDOK|IDRETRY|IDYES)\b</string>
+			<key>name</key>
+			<string>constant.helpers.nsl</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\w+\(.*?\)</string>
+			<key>name</key>
+			<string>support.function.nsl</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\b(admin|false|highest|off|on|true|user)\b</string>
+			<key>name</key>
+			<string>constant.state.nsl</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\b((0(x|X)[0-9a-fA-F]{1,6})|([0-9\.\,]+))\b</string>
+			<key>name</key>
+			<string>constant.numeric.nsl</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\$[\w]+</string>
+			<key>name</key>
+			<string>variable.name.nsl</string>
+		</dict>
+
+		<dict>
+			<key>begin</key>
+			<string>`</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.nsl</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(`)|(\n)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.nsl</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.back.nsl</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\$\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.nsl</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.nsl</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(")|(\n)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.nsl</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.double.nsl</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\$\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.nsl</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.nsl</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(')|(\n)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.nsl</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.single.nsl</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\$\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.nsl</string>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.nsl</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(//).*$\n?</string>
+			<key>name</key>
+			<string>comment.line.nsl</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.nsl</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.nsl</string>
+		</dict>
+
+		<!-- https://github.com/SublimeText/NSIS -->
+		<dict>
+			<key>include</key>
+			<string>source.nsis</string>
+		</dict>
+	</array>
+
+	<key>scopeName</key>
+	<string>source.nsl</string>
+	<key>uuid</key>
+	<string>D3C4E6DA-6B1C-11D9-8CC2-000D93589AF6</string>
+</dict>
+</plist>
