@@ -4,6 +4,8 @@
 
 nsL is a new C-like programming language for writing [NSIS](http://nsis.sourceforge.net) installation wizards. The nsL assembler takes nsL code and translates it into original NSIS script which can then be compiled.
 
+![Screenshot](https://raw.github.com/idleberg/nsL-Assembler-Sublime-Text/master/screenshot.png)
+
 ## Installation
 
 ### Package Control
