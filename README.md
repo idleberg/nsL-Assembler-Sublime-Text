@@ -24,6 +24,16 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 * Download the files using the GitHub [.zip](https://github.com/idleberg/nsL-Assembler-Sublime-Text/archive/master.zip) download option
 * Unzip the files to your Sublime Text `Packages/User` directory
 
+## Usage
+
+### Completions
+
+You can complete all nsL (and NSIS) commands using the `Tab` key. Hit `Tab` again to jump between fields.
+
+### Building
+
+You can build your script using the default shortcut or from the Tools menu. Output scripts will be placed in the same folder as your input. Note that from Windows Vista on you need administrative rights to compile scripts in %PROGRAMFILES%, which is the default location for nsL example scripts!
+
 ## License
 
 The MIT License (MIT)
