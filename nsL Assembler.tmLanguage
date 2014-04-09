@@ -56,14 +56,14 @@
 
 		<dict>
 			<key>match</key>
-			<string>\b(admin|false|highest|off|on|true|user)\b</string>
+			<string>\b(admin|all|auto|both|current|false|force|hide|highest|ifdiff|ifnewer|lastused|listonly|nevershow|none|normal|off|on|show|silent|silentlog|textonly|true|user)\b</string>
 			<key>name</key>
-			<string>constant.state.nsl</string>
+			<string>constant.flags.nsl</string>
 		</dict>
 
 		<dict>
 			<key>match</key>
-			<string>\b((0(x|X)[0-9a-fA-F]{1,6})|([0-9\.\,]+))\b</string>
+			<string>\b((0(x|X)[0-9a-fA-F])|([0-9\.\,]+))\b</string>
 			<key>name</key>
 			<string>constant.numeric.nsl</string>
 		</dict>
