@@ -1,0 +1,11 @@
+{
+  "cmd": ["java", "$file"],
+  "working_dir": "${project_path:${folder}}",
+  "file_regex": ".*rror in script:? \"(...*?)\" on line ([0-9]*)",
+  "selector" : "source.nsl",
+  
+  "windows":
+    {
+      "cmd": ["$packages\\nsL Assembler\\nsl-build.cmd", "$file"]
+    }
+}

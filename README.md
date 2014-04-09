@@ -1,6 +1,6 @@
 # nsL Assembler for SublimeText
 
-[nsL Assembler](http://sourceforge.net/projects/nslassembler/) syntax definitions [Sublime Text](http://www.sublimetext.com/)
+[nsL Assembler](http://sourceforge.net/projects/nslassembler/) syntax definitions, command completions and build system for [Sublime Text](http://www.sublimetext.com/)
 
 nsL is a new C-like programming language for writing [NSIS](http://nsis.sourceforge.net) installation wizards. The nsL assembler takes nsL code and translates it into original NSIS script which can then be compiled.
 
@@ -21,7 +21,7 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 
 ### Download Manually
 
-* Download the files using the GitHub .zip download option
+* Download the files using the GitHub [.zip](https://github.com/idleberg/nsL-Assembler-Sublime-Text/archive/master.zip) download option
 * Unzip the files to your Sublime Text `Packages/User` directory
 
 ## License
