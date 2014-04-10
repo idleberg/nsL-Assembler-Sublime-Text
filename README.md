@@ -34,7 +34,9 @@ You can complete all nsL (and NSIS) commands using the `Tab` key. Hit `Tab` agai
 
 ### Building
 
-You can build your script using the default shortcut or from the Tools menu. Output scripts will be placed in the same folder as your input. Note that from Windows Vista on you need administrative rights to compile scripts in %PROGRAMFILES%, which is the default location for nsL example scripts!
+You can build your script using the default shortcut or from the Tools menu. Output scripts will be placed in the same folder as your input. Note that from Windows Vista on you need administrative rights to compile scripts in `%PROGRAMFILES%`, which is the default location for nsL example scripts!
+
+Should the build system be unable to locate the compiler, you should probably re-install NSIS to make sure required registry keys are created. Alternatively, you can specify the install location in the environment variable `%NSIS_HOME%`.
 
 ## License
 
