@@ -1,6 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/idleberg/nsL-Assembler-Sublime-Text.png)](http://travis-ci.org/idleberg/nsL-Assembler-Sublime-Text)
-
-# nsL Assembler for SublimeText
+# nsL Assembler for SublimeText [![Build Status](https://secure.travis-ci.org/idleberg/nsL-Assembler-Sublime-Text.png)](http://travis-ci.org/idleberg/nsL-Assembler-Sublime-Text)
 
 [nsL Assembler](http://sourceforge.net/projects/nslassembler/) syntax definitions, command completions and build system for [Sublime Text](http://www.sublimetext.com/).
 
