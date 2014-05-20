@@ -1,0 +1,48 @@
+<snippet>
+	<content><![CDATA[
+; Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
+
+; Includes ---------------------------------
+#nsis
+	!include MUI2.nsh
+#nsisend
+
+; Settings ---------------------------------
+Name("${1:installer_name}");
+OutFile("${2:${1}}.exe");
+RequestExecutionLevel(${3:user});
+InstallDir("\$PROGRAMFILES\\${4:${1}}");
+
+#nsis
+	; Pages ------------------------------------
+	!insertmacro MUI_PAGE_COMPONENTS 
+	!insertmacro MUI_PAGE_DIRECTORY
+	!insertmacro MUI_PAGE_INSTFILES
+	#nsisend
+
+	; Languages --------------------------------
+	!insertmacro MUI_LANGUAGE "${5:English}"
+#nsisend
+
+; Sections ---------------------------------
+section ${6:section_index}("${7:section_name}") {
+
+	${8:// your code here}
+
+}
+
+; Descriptions -----------------------------
+LangString(DESC_${6}, \${LANG_${5/(.*)/\U\1/}}, "${9:section_description}");
+
+#nsis
+	!insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
+		!insertmacro MUI_DESCRIPTION_TEXT \${${6}} \$(DESC_${6})
+	!insertmacro MUI_FUNCTION_DESCRIPTION_END
+#nsisend
+
+; Functions --------------------------------
+${10}
+]]></content>
+	<tabTrigger>scaffold:ModernUI</tabTrigger>
+	<scope>source.nsl</scope>
+</snippet>

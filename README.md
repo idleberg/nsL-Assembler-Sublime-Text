@@ -32,6 +32,44 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 
 You can complete all nsL (and NSIS) commands using the `Tab` key. Hit `Tab` again to jump between fields.
 
+### Scaffolding
+
+Scaffolding snippets start with the prefix scaffold followed by the type of script you'd like to build:
+
+* Basic Script
+* MUI2 Script
+
+Example:
+
+With Sublime Text's fuzzy search in mind, you could for instance type `scaffBasic` to trigger the `scaffold:Basic Script`snippet and create the following script:
+
+	; Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
+
+	; Settings ---------------------------------
+	Name("installer_name");
+	OutFile("installer_name.exe");
+	RequestExecutionLevel(user);
+	InstallDir("$PROGRAMFILES\installer_name");
+
+	; Includes ---------------------------------
+
+
+	; Pages ------------------------------------
+	page Components();
+	page Directory();
+	page InstFiles();
+
+	; Sections ---------------------------------
+	section section_index("section_name") {
+
+		// your code here
+
+	}
+
+	; Functions --------------------------------
+
+Use Tab to jump to the next relevant bit of code you might want to change, Shift-Tab to jump back.
+
 ### Building
 
 You can build your script using the default shortcut or from the Tools menu. Output scripts will be placed in the same folder as your input. Note that from Windows Vista on you need administrative rights to compile scripts in `%PROGRAMFILES%`, which is the default location for nsL example scripts!
