@@ -1,0 +1,22 @@
+Introducing snippets to scaffold basic NSIS scripts. Try any of the following
+triggers while working in the nsL scope:
+
+    scaffold:Basic Script
+    scaffold:Basic Script (onInit)
+    scaffold:Basic Script (2 Sections)
+    scaffold:Basic Script (2 Sections, onInit)
+    scaffold:Basic Script (3 Sections)
+    scaffold:Basic Script (3 Sections, onInit)
+    scaffold:Basic Script (4 Sections)
+    scaffold:Basic Script (4 Sections, onInit)
+
+    scaffold:MUI Script
+    scaffold:MUI Script (onInit)
+    scaffold:MUI Script (2 Sections)
+    scaffold:MUI Script (2 Sections, onInit)
+    scaffold:MUI Script (3 Sections)
+    scaffold:MUI Script (3 Sections, onInit)
+    scaffold:MUI Script (4 Sections)
+    scaffold:MUI Script (4 Sections, onInit)
+
+Enjoy!
