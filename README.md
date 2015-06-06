@@ -1,4 +1,8 @@
-# nsL Assembler for SublimeText [![Build Status](https://secure.travis-ci.org/idleberg/nsL-Assembler-Sublime-Text.png)](http://travis-ci.org/idleberg/nsL-Assembler-Sublime-Text)
+# nsL Assembler for SublimeText
+
+[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![GitHub release](https://img.shields.io/github/release/idleberg/nsL-Assembler-Sublime-Text.svg?style=flat-square)](https://github.com/idleberg/nsL-Assembler-Sublime-Text/releases)
+[![Travis](https://img.shields.io/travis/idleberg/nsL-Assembler-Sublime-Text.svg?style=flat-square)](https://travis-ci.org/idleberg/nsL-Assembler-Sublime-Text)
 
 [nsL Assembler](http://sourceforge.net/projects/nslassembler/) syntax definitions, command completions and build system for [Sublime Text](http://www.sublimetext.com/).
 
