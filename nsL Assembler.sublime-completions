@@ -28,7 +28,7 @@
                 { "trigger": "onVerifyInstDir()", "contents": "function .onVerifyInstDir(${1}) {\n\t${2:// your code here}\n}" },
                 { "trigger": "page Components()", "contents": "page Components(${1:function}) {\n\t${2:// your code here}\n}" },
                 { "trigger": "page Directory()", "contents": "page Directory(${1:function}) {\n\t${2:// your code here}\n}" },
-                { "trigger": "page instConfirm()", "contents": "page uninstConfirm(${1:function}) {\n\t${2:// your code here}\n}" },
+                { "trigger": "page InstConfirm()", "contents": "page InstConfirm(${1:function}) {\n\t${2:// your code here}\n}" },
                 { "trigger": "page InstFiles()", "contents": "page InstFiles(${1:function}) {\n\t${2:// your code here}\n}" },
                 { "trigger": "page License()", "contents": "page License(${1:function}) {\n\t${2:// your code here}\n}" },
                 { "trigger": "page()", "contents": "page ${1:PageType}(${2:function}) {\n\t${3:// your code here}\n}" },
