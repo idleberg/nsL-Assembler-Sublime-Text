@@ -1,29 +1,29 @@
 <snippet>
 	<content><![CDATA[
-; Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
+// Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
 
-; Settings ---------------------------------
+// Settings ---------------------------------
 Name("${1:installer_name}");
 OutFile("${2:${1}}.exe");
 RequestExecutionLevel(${3:user});
 InstallDir("\$PROGRAMFILES\\${4:${1}}");
 
-; Includes ---------------------------------
+// Includes ---------------------------------
 ${5}
 
-; Pages ------------------------------------
+// Pages ------------------------------------
 page Components();
 page Directory();
 page InstFiles();
 
-; Sections ---------------------------------
+// Sections ---------------------------------
 section ${6:section_index}("${7:section_name}") {
 
 	${8:// your code here}
 
 }
 
-; Functions --------------------------------
+// Functions --------------------------------
 function .onInit() {
 	${9:// your code here}
 }

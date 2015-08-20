@@ -1,29 +1,29 @@
 <snippet>
 	<content><![CDATA[
-; Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
+// Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
 
-; Includes ---------------------------------
+// Includes ---------------------------------
 #nsis
 	!include MUI2.nsh
 #nsisend
 
-; Settings ---------------------------------
+// Settings ---------------------------------
 Name("${1:installer_name}");
 OutFile("${2:${1}}.exe");
 RequestExecutionLevel(${3:user});
 InstallDir("\$PROGRAMFILES\\${4:${1}}");
 
 #nsis
-	; Pages ------------------------------------
+	// Pages ------------------------------------
 	!insertmacro MUI_PAGE_COMPONENTS 
 	!insertmacro MUI_PAGE_DIRECTORY
 	!insertmacro MUI_PAGE_INSTFILES
 
-	; Languages --------------------------------
+	// Languages --------------------------------
 	!insertmacro MUI_LANGUAGE "${5:English}"
 #nsisend
 
-; Sections ---------------------------------
+// Sections ---------------------------------
 section ${6:section1_index}("${7:section1_name}") {
 
 	${8:// your code here}
@@ -48,7 +48,7 @@ section ${15:section4_index}("${16:section4_name}") {
 
 }
 
-; Descriptions -----------------------------
+// Descriptions -----------------------------
 LangString(DESC_${6}, \${LANG_${5/(.*)/\U\1/}}, "${18:section1_description}");
 LangString(DESC_${9}, \${LANG_${5/(.*)/\U\1/}}, "${19:section2_description}");
 LangString(DESC_${12}, \${LANG_${5/(.*)/\U\1/}}, "${20:section3_description}");
@@ -63,7 +63,7 @@ LangString(DESC_${15}, \${LANG_${5/(.*)/\U\1/}}, "${21:section4_description}");
 	!insertmacro MUI_FUNCTION_DESCRIPTION_END
 #nsisend
 
-; Functions --------------------------------
+// Functions --------------------------------
 function .onInit() {
 	${22:// your code here}
 }
