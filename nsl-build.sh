@@ -4,12 +4,12 @@
 NSL_JAR=
 
 if [ -z $NSL_JAR ]; then
-    echo "nsL.jar not define in build script"
+    echo "nsL.jar not defined in build script"
 elif [ -f $NSL_JAR ]; then
     eval java -jar $NSL_JAR $@
     exit 0
 else
-    echo "$NSL_JAR not found"
+    echo "'$NSL_JAR' not found"
 fi
 
 ### Wine fallback (via https://gist.github.com/derekstavis/8288379)
