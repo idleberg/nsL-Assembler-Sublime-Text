@@ -47,30 +47,32 @@ Example:
 
 With Sublime Text's fuzzy search in mind, you could for instance type `scaffBasic` to trigger the `scaffold:Basic Script`snippet and create the following script:
 
-	; Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
+```nsis
+// Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
 
-	; Settings ---------------------------------
-	Name("installer_name");
-	OutFile("installer_name.exe");
-	RequestExecutionLevel(user);
-	InstallDir("$PROGRAMFILES\installer_name");
+// Settings ---------------------------------
+Name("installer_name");
+OutFile("installer_name.exe");
+RequestExecutionLevel(user);
+InstallDir("$PROGRAMFILES\installer_name");
 
-	; Includes ---------------------------------
+// Includes ---------------------------------
 
 
-	; Pages ------------------------------------
-	page Components();
-	page Directory();
-	page InstFiles();
+// Pages ------------------------------------
+page Components();
+page Directory();
+page InstFiles();
 
-	; Sections ---------------------------------
-	section section_index("section_name") {
+// Sections ---------------------------------
+section section_index("section_name") {
 
-		// your code here
+	// your code here
 
-	}
+}
 
-	; Functions --------------------------------
+; Functions --------------------------------
+```
 
 Use Tab to jump to the next relevant bit of code you might want to change, Shift-Tab to jump back.
 
