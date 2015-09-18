@@ -23,12 +23,12 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 ### GitHub
 
 1. Change to your Sublime Text `Packages` directory
-2. Clone repository `git clone https://github.com/idleberg/nsL-Assembler-Sublime-Text.git`
+2. Clone repository `git clone https://github.com/idleberg/nsL-Assembler-Sublime-Text.git 'nsL Assembler'`
 
-### Download Manually
+### Manual installation
 
-* Download the files using the GitHub [.zip](https://github.com/idleberg/nsL-Assembler-Sublime-Text/archive/master.zip) download option
-* Unzip the files to your Sublime Text `Packages` directory
+1. Download the latest [stable release](https://github.com/idleberg/nsL-Assembler-Sublime-Text/releases)
+2. Unzip the archive to your Sublime Text `Packages` directory
 
 ## Usage
 
@@ -84,15 +84,7 @@ Should the build system be unable to locate the compiler, you should probably re
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2014 Jan T. Sott
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+This work is licensed under the [The MIT License](LICENSE).
 
 ## Donate
 
