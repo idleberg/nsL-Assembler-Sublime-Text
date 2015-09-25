@@ -80,7 +80,7 @@ Use Tab to jump to the next relevant bit of code you might want to change, Shift
 
 You can build your script using the default shortcut or from the Tools menu. Output scripts will be placed in the same folder as your input. Note that as of Windows Vista you need administrative rights to compile scripts in `%PROGRAMFILES%`, which is the default location for nsL example scripts!
 
-Should the build system be unable to locate the compiler, you should probably re-install NSIS to make sure required registry keys are created. Alternatively, you can specify the install location in the [environment variable](http://superuser.com/a/284351/195953) `%NSIS_HOME%`.
+Should the build system be unable to locate the compiler, you should probably re-install NSIS to make sure required registry keys are created. Alternatively, you can specify the install location in the [environment variable](http://superuser.com/a/284351/195953) `%NSIS_HOME%`. In case of a *Permission denied* error, change the permissions of the Bash script: `chmod +x nsl-build.sh`.
 
 ## License
 
