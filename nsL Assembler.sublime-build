@@ -1,11 +1,11 @@
 {
-  "cmd": ["$packages/nsL Assembler/nsl-build.sh", "$file"],
+  "cmd": ["$packages/nsL Assembler/build.sh", "$file"],
   "working_dir": "${project_path:${folder}}",
   "file_regex": ".*rror:? \"(...*?)\" on line ([0-9]*)",
   "selector" : "source.nsl",
   
   "windows":
     {
-      "cmd": ["$packages\\nsL Assembler\\nsl-build.cmd", "$file"]
+      "cmd": ["$packages\\nsL Assembler\\build.cmd", "$file"]
     }
 }
