@@ -2,9 +2,6 @@
 
 import os, stat, sublime, sublime_plugin
 
-# Package name, must match directory name
-p = 'nsL Assembler'
-
 # Array of files, relative to package directory
 files = [
     'build.sh'
@@ -12,14 +9,17 @@ files = [
 
 def plugin_loaded():
     from package_control import events
+    
+    # Get name of package folder
+    me = os.path.basename(os.path.dirname(os.path.realpath(__file__)))
 
-    if (events.install(p) or events.post_upgrade(p)) and os.name is 'posix' or 'mac':
+    if (events.install(me) or events.post_upgrade(me)) and os.name is 'posix' or 'mac':
         for file in files:
 
             # Concat full path
-            f = sublime.packages_path() + '/' + p + '/' + file
+            file_path = sublime.packages_path() + '/' + me + '/' + file
 
             # Change permissions, if file exists
-            if os.path.isfile(f):
-                st = os.stat(f)
-                os.chmod(f, st.st_mode | stat.S_IEXEC)
+            if os.path.isfile(file_path):
+                st = os.stat(file_path)
+                os.chmod(file_path, st.st_mode | stat.S_IEXEC)
