@@ -56,6 +56,8 @@
 
                 { "trigger": "Abort()", "contents": "Abort(${1});" },
                 { "trigger": "AddBrandingImage()", "contents": "AddBrandingImage(${1});" },
+                { "trigger": "AddIncludeDir()", "contents": "AddIncludeDir(${1});" },
+                { "trigger": "AddPluginDir()", "contents": "AddPluginDir(${1});" },
                 { "trigger": "AddSize()", "contents": "AddSize(${1});" },
                 { "trigger": "AllowRootDirInstall()", "contents": "AllowRootDirInstall(${1});" },
                 { "trigger": "AllowRootDirInstall(false)", "contents": "AllowRootDirInstall(false);" },
@@ -135,6 +137,7 @@
                 { "trigger": "IfFileExists()", "contents": "IfFileExists(${1});" },
                 { "trigger": "IfRebootFlag()", "contents": "IfRebootFlag(${1});" },
                 { "trigger": "IfSilent()", "contents": "IfSilent(${1});" },
+                { "trigger": "Include()", "contents": "Include(${1});" },
                 { "trigger": "InitPluginsDir()", "contents": "InitPluginsDir(${1});" },
                 { "trigger": "InstallButtonText()", "contents": "InstallButtonText(${1});" },
                 { "trigger": "InstallColors()", "contents": "InstallColors(${1});" },
