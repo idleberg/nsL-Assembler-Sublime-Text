@@ -1,15 +1,15 @@
 # nsL Assembler for SublimeText
 
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![GitHub release](https://img.shields.io/github/release/idleberg/nsL-Assembler-Sublime-Text.svg?style=flat-square)](https://github.com/idleberg/nsL-Assembler-Sublime-Text/releases)
-[![Travis](https://img.shields.io/travis/idleberg/nsL-Assembler-Sublime-Text.svg?style=flat-square)](https://travis-ci.org/idleberg/nsL-Assembler-Sublime-Text)
+[![GitHub release](https://img.shields.io/github/release/idleberg/sublime-nsl-assembler.svg?style=flat-square)](https://github.com/idleberg/sublime-nsl-assembler/releases)
+[![Travis](https://img.shields.io/travis/idleberg/sublime-nsl-assembler.svg?style=flat-square)](https://travis-ci.org/idleberg/sublime-nsl-assembler)
 [![Gitter](https://img.shields.io/badge/chat-Gitter-ff69b4.svg?style=flat-square)](https://gitter.im/NSIS-Dev/SublimeText)
 
 [nsL Assembler](http://sourceforge.net/projects/nslassembler/) syntax definitions, command completions and build system for [Sublime Text](http://www.sublimetext.com/).
 
 nsL is a new C-like programming language for writing [NSIS](http://nsis.sourceforge.net) installation wizards. The nsL assembler takes nsL code and translates it into original NSIS script which can then be compiled.
 
-![Screenshot](https://raw.github.com/idleberg/nsL-Assembler-Sublime-Text/master/screenshot.png)
+![Screenshot](https://raw.github.com/idleberg/sublime-nsl-assembler/master/screenshot.png)
 
 ## Installation
 
@@ -24,11 +24,11 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 ### GitHub
 
 1. Change to your Sublime Text `Packages` directory
-2. Clone repository `git clone https://github.com/idleberg/nsL-Assembler-Sublime-Text.git 'nsL Assembler'`
+2. Clone repository `git clone https://github.com/idleberg/sublime-nsl-assembler.git 'nsL Assembler'`
 
 ### Manual installation
 
-1. Download the latest [stable release](https://github.com/idleberg/nsL-Assembler-Sublime-Text/releases)
+1. Download the latest [stable release](https://github.com/idleberg/sublime-nsl-assembler/releases)
 2. Unzip the archive to your Sublime Text `Packages` directory
 
 ## Usage
@@ -49,7 +49,7 @@ Example:
 With Sublime Text's fuzzy search in mind, you could for instance type `scaffBasic` to trigger the `scaffold:Basic Script`snippet and create the following script:
 
 ```nsis
-// Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
+// Scaffolding by https://github.com/idleberg/sublime-nsl-assembler
 
 // Settings ---------------------------------
 Name("installer_name");
@@ -89,4 +89,4 @@ This work is licensed under the [The MIT License](LICENSE).
 
 ## Donate
 
-You are welcome support this project using [Flattr](https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/nsL-Assembler-Sublime-Text) or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
+You are welcome support this project using [Flattr](https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/sublime-nsl-assembler) or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
