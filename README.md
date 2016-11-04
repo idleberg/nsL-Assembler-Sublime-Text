@@ -23,10 +23,10 @@ nsL is a new C-like programming language for writing [NSIS](http://nsis.sourcefo
 
 With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/) enabled, Package Control will keep all installed packages up-to-date!
 
-### GitHub
+### Using Git
 
 1. Change to your Sublime Text `Packages` directory
-2. Clone repository `git clone https://github.com/idleberg/nsL-Assembler-Sublime-Text.git 'nsL Assembler'`
+2. Clone repository `git clone --branch subl2 https://github.com/idleberg/nsL-Assembler-Sublime-Text.git 'nsL Assembler'`
 
 ### Manual installation
 
