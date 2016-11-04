@@ -21,9 +21,9 @@ PROGRAMS_UNIX=$(winepath -u "${PROGRAMS_WIN}" 2>/dev/null)
 echo "Detecting nsL.jar"
 
 # Get path to nsLJar
-NSLJAR=$(printf %q "${PROGRAMS_UNIX%?}/NSIS/NSL/nsL.jar")
+NSL_JAR=$(printf %q "${PROGRAMS_UNIX%?}/NSIS/NSL/nsL.jar")
 
 echo "Running Java"
 echo
 
-eval java -jar "$NSLJAR" /nopause /nomake $@
+eval java -jar "$NSL_JAR" /nopause /nomake $@
