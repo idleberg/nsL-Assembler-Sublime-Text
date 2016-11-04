@@ -2,7 +2,7 @@
 
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![GitHub release](https://img.shields.io/github/release/idleberg/sublime-nsl-assembler.svg?style=flat-square)](https://github.com/idleberg/sublime-nsl-assembler/releases)
-[![Travis](https://img.shields.io/travis/idleberg/sublime-nsl-assembler.svg?style=flat-square)](https://travis-ci.org/idleberg/sublime-nsl-assembler)
+[![Travis](https://img.shields.io/travis/idleberg/sublime-nsl-assembler.svghttps://travis-ci.org/idleberg/sublime-nsl-assembler.svg?branch=subl2&style=flat-square)](https://travis-ci.org/idleberg/sublime-nsl-assembler)
 [![Gitter](https://img.shields.io/badge/chat-Gitter-ff69b4.svg?style=flat-square)](https://gitter.im/NSIS-Dev/SublimeText)
 
 [nsL Assembler](http://sourceforge.net/projects/nslassembler/) syntax definitions, command completions and build system for [Sublime Text](http://www.sublimetext.com/).
