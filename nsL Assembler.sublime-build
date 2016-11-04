@@ -1,11 +1,19 @@
 {
-  "cmd": ["$packages/nsL Assembler/build.sh", "$file"],
-  "working_dir": "${project_path:${folder}}",
-  "file_regex": ".*rror:? \"(...*?)\" on line ([0-9]*)",
-  "selector" : "source.nsl",
-  
-  "windows":
+  "cmd": ["sh", "$packages/nsL Assembler/scripts/build.sh", "$file"], "working_dir": "${project_path:${folder}}",
+  "file_regex": ".*rror in script \"(...*?)\" on line ([0-9]*):",
+  "selector": "source.nsl",
+
+  "windows": {
+    "cmd": ["$packages\\nsL Assembler\\scripts\\build.cmd", "$file"]
+  },
+
+  "variants": [
     {
-      "cmd": ["$packages\\nsL Assembler\\build.cmd", "$file"]
+      "name": "Wine",
+      "cmd": ["sh", "$packages/nsL Assembler/scripts/build-wine.sh", "$file"],
+      "windows": {
+        "cmd": ["echo", "This build system is not available on Windows"]
+      }
     }
+  ]
 }
