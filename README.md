@@ -51,7 +51,7 @@ Example:
 
 With Sublime Text's fuzzy search in mind, you could for instance type `scaffBasic` to trigger the `scaffold:Basic Script`snippet and create the following script:
 
-```nsis
+```
 // Scaffolding by https://github.com/idleberg/sublime-nsl-assembler
 
 // Settings ---------------------------------
