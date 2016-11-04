@@ -1,13 +1,16 @@
 # nsL Assembler for SublimeText
 
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![Package Control](https://packagecontrol.herokuapp.com/downloads/nsL%20Assembler.svg?style=flat-square)](https://packagecontrol.io/packages/nsL%20Assembler)
 [![GitHub release](https://img.shields.io/github/release/idleberg/sublime-nsl-assembler.svg?style=flat-square)](https://github.com/idleberg/sublime-nsl-assembler/releases)
-[![Travis](https://img.shields.io/travis/idleberg/sublime-nsl-assembler.svghttps://travis-ci.org/idleberg/sublime-nsl-assembler.svg?branch=subl2&style=flat-square)](https://travis-ci.org/idleberg/sublime-nsl-assembler)
-[![Gitter](https://img.shields.io/badge/chat-Gitter-ff69b4.svg?style=flat-square)](https://gitter.im/NSIS-Dev/SublimeText)
+[![Travis](https://img.shields.io/travis/idleberg/sublime-nsl-assembler.svg?style=flat-square)](https://travis-ci.org/idleberg/sublime-nsl-assembler)
+[![Gitter](https://img.shields.io/badge/chat-Gitter-ed1965.svg?style=flat-square)](https://gitter.im/NSIS-Dev/SublimeText)
 
 [nsL Assembler](http://sourceforge.net/projects/nslassembler/) syntax definitions, command completions and build system for [Sublime Text](http://www.sublimetext.com/).
 
 nsL is a new C-like programming language for writing [NSIS](http://nsis.sourceforge.net) installation wizards. The nsL assembler takes nsL code and translates it into original NSIS script which can then be compiled.
+
+**Note**: This package is compatible with Sublime Text 3 ([Build 3103](http://www.sublimetext.com/blog/articles/sublime-text-3-build-3103) or higher). Click [here](https://github.com/idleberg/sublime-nsl-assembler/tree/subl2) for a Sublime Text 2 version of this package.
 
 ![Screenshot](https://raw.github.com/idleberg/sublime-nsl-assembler/master/screenshot.png)
 
@@ -18,15 +21,15 @@ nsL is a new C-like programming language for writing [NSIS](http://nsis.sourcefo
 ### Package Control
 
 1. Make sure you already have [Package Control](https://packagecontrol.io/) installed
-2. Choose “*Install Package*” from the Command Palette (<kbd>Super</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>)
-3. Type “*nsL Assembler*” and press <kbd>Enter</kbd>
+2. Choose *“Install Package”* from the Command Palette (<kbd>Super</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>)
+3. Type *“nsL Assembler”* and press <kbd>Enter</kbd>
 
 With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/) enabled, Package Control will keep all installed packages up-to-date!
 
 ### Using Git
 
 1. Change to your Sublime Text `Packages` directory
-2. Clone repository `git clone --branch subl2 https://github.com/idleberg/sublime-nsl-assembler.git 'nsL Assembler'`
+2. Clone repository `git clone https://github.com/idleberg/sublime-nsl-assembler.git 'nsL Assembler'`
 
 ### Manual installation
 
@@ -83,7 +86,7 @@ Use Tab to jump to the next relevant bit of code you might want to change, Shift
 
 You can build your script using the default shortcut or from the Tools menu. Output scripts will be placed in the same folder as your input. Note that as of Windows Vista you need administrative rights to compile scripts in `%PROGRAMFILES%`, which is the default location for nsL example scripts!
 
-Should the build system be unable to locate the compiler, you should probably re-install NSIS to make sure required registry keys are created. Alternatively, you can specify the install location in the [environment variable](http://superuser.com/a/284351/195953) `%NSIS_HOME%`.
+Should the build system be unable to locate the compiler, you should probably re-install NSIS to make sure required registry keys are created. Alternatively, you can specify the install location in the [environment variable](http://superuser.com/a/284351/195953) `%NSIS_HOME%`. In case of a *Permission denied* error, change the permissions of the Bash script: `chmod +x build.sh`.
 
 ## License
 
