@@ -12,6 +12,8 @@ nsL is a new C-like programming language for writing [NSIS](http://nsis.sourcefo
 
 ![Screenshot](https://raw.github.com/idleberg/sublime-nsl-assembler/master/screenshot.png)
 
+*Screenshot using [Hopscotch](https://github.com/idleberg/Hopscotch) color scheme*
+
 ## Installation
 
 ### Package Control
