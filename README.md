@@ -50,7 +50,7 @@ Example:
 
 With Sublime Text's fuzzy search in mind, you could for instance type `scaffBasic` to trigger the `scaffold:Basic Script`snippet and create the following script:
 
-```nsis
+```
 // Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
 
 // Settings ---------------------------------
@@ -74,7 +74,7 @@ section section_index("section_name") {
 
 }
 
-; Functions --------------------------------
+// Functions --------------------------------
 ```
 
 Use Tab to jump to the next relevant bit of code you might want to change, Shift-Tab to jump back.
