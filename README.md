@@ -60,7 +60,7 @@ With Sublime Text's fuzzy search in mind, you could for instance type `scaffBasi
 Name("installer_name");
 OutFile("installer_name.exe");
 RequestExecutionLevel(user);
-InstallDir($PROGRAMFILES. "\\installer_name");
+InstallDir($PROGRAMFILES . "\\installer_name");
 
 // Includes ---------------------------------
 
