@@ -1,0 +1,1 @@
+pf = os.environ["ProgramFiles(x86)"] or os.environ["ProgramFiles"]

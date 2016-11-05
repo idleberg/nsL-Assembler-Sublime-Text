@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-// Scaffolding by https://github.com/idleberg/nsL-Assembler-Sublime-Text
+// Scaffolding by https://github.com/idleberg/sublime-nsl-assembler
 
 // Settings ---------------------------------
 Name("${1:installer_name}");
