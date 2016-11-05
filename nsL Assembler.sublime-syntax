@@ -98,6 +98,27 @@ contexts:
           scope: variable.other.nsl
         - match: '{{definitions}}'
           scope: constant.other.nsl
+
+    - match: '\b(#nsis)\b'
+      captures:
+        0: punctuation.definition.string.begin.nsl
+      push:
+        - meta_scope: string.quoted.back.nsl
+        - match: `\b(#nsisend)\b'
+          captures:
+            0: punctuation.definition.string.end.nsl
+          pop: true
+        - match: '{{escape_char}}'
+          scope: constant.character.escape.nsl
+        - match: '{{uservar}}'
+          scope: variable.other.nsl
+        - match: '{{variable}}'
+          scope: variable.language.nsl
+        - match: '{{language}}'
+          scope: variable.other.nsl
+        - match: '{{definitions}}'
+          scope: constant.other.nsl
+
     - match: (//).*$\n?
       scope: comment.line.nsl
       captures:

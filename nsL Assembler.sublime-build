@@ -1,5 +1,6 @@
 {
-  "cmd": ["sh", "$packages/nsL Assembler/scripts/build.sh", "$file"], "working_dir": "${project_path:${folder}}",
+  "cmd": ["sh", "$packages/nsL Assembler/scripts/build.sh", "$file"],
+  "working_dir": "${project_path:${folder}}",
   "file_regex": ".*rror in script \"(...*?)\" on line ([0-9]*):",
   "selector": "source.nsl",
 
