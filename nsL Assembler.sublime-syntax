@@ -6,11 +6,12 @@ file_extensions:
   - nsl
 scope: source.nsl
 variables:
-  uservar: '\$\w+'
+  user_var: '\$\w+'
   variable: '\$(\{__DATE__\}|\{__FILE__\}|\{__FILEDIR__\}|\{__LINE__\}|\{__TIME__\}|\{__TIMESTAMP__\}|ADMINTOOLS|APPDATA|CDBURN_AREA|CMDLINE|COMMONFILES|COOKIES|DESKTOP|DOCUMENTS|EXEDIR|EXEFILE|EXEPATH|FAVORITES|FONTS|HISTORY|HWNDPARENT|INSTDIR|INTERNET_CACHE|LANGUAGE|LOCALAPPDATA|MUSIC|NETHOOD|NSIS_MAX_STRLEN|NSIS_VERSION|NSISDIR|OUTDIR|PICTURES|PLUGINSDIR|PRINTHOOD|PROFILE|PROGRAMFILES(32|64)?|QUICKLAUNCH|RECENT|RESOURCES_LOCALIZED|RESOURCES|SENDTO|SMPROGRAMS|SMSTARTUP|STARTMENU|SYSDIR|TEMP|TEMPLATES|VIDEOS|WINDIR)'
   language: '\$\([\w\.:\^-]+\)'
   definitions: '\$\{[\w\.:\^-]+\}'
   escape_char: '\\(\"|n|r|t)'
+  line_comment: '(//).*$\n?'
 contexts:
   main:
     # NSIS syntax ionside #nsis blocks only (thanks Keith Hall – https://github.com/keith-hall)
@@ -25,6 +26,10 @@ contexts:
             1: keyword.other.nsl
           pop: true
         - include: 'scope:source.nsis'
+        - match: '{{line_comment}}'
+          scope: comment.line.nsl
+          captures:
+            1: punctuation.definition.comment.nsl
       with_prototype:
         - match: '(?i)(?=#nsisend)'
           pop: true
@@ -53,7 +58,7 @@ contexts:
       scope: constant.other.nsl
     - match: '{{definitions}}'
       scope: constant.other.nsl
-    - match: '{{uservar}}'
+    - match: '{{user_var}}'
       scope: variable.other.nsl
     - match: '{{variable}}'
       scope: variable.language.nsl
@@ -68,7 +73,7 @@ contexts:
           pop: true
         - match: '{{escape_char}}'
           scope: constant.character.escape.nsl
-        - match: '{{uservar}}'
+        - match: '{{user_var}}'
           scope: variable.other.nsl
         - match: '{{variable}}'
           scope: variable.language.nsl
@@ -87,7 +92,7 @@ contexts:
           pop: true
         - match: '{{escape_char}}'
           scope: constant.character.escape.nsl
-        - match: '{{uservar}}'
+        - match: '{{user_var}}'
           scope: variable.other.nsl
         - match: '{{variable}}'
           scope: variable.language.nsl
@@ -106,7 +111,7 @@ contexts:
           pop: true
         - match: '{{escape_char}}'
           scope: constant.character.escape.nsl
-        - match: '{{uservar}}'
+        - match: '{{user_var}}'
           scope: variable.other.nsl
         - match: '{{variable}}'
           scope: variable.language.nsl
@@ -114,7 +119,7 @@ contexts:
           scope: variable.other.nsl
         - match: '{{definitions}}'
           scope: constant.other.nsl
-    - match: (//).*$\n?
+    - match: '{{line_comment}}'
       scope: comment.line.nsl
       captures:
         1: punctuation.definition.comment.nsl
