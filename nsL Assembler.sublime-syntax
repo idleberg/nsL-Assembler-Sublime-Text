@@ -13,7 +13,7 @@ variables:
   escape_char: '\\(\"|n|r|t)'
 contexts:
   main:
-    # Use NSIS syntax within #nsis blocks (thanks Keith Hall – https://github.com/keith-hall)
+    # NSIS syntax ionside #nsis blocks only (thanks Keith Hall – https://github.com/keith-hall)
     # https://forum.sublimetext.com/t/apply-imported-syntax-on-sections-only/24207/2
     - match: '^\s*(#nsis)\b'
       captures:
