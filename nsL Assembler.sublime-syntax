@@ -14,7 +14,7 @@ variables:
   line_comment: '(//).*$\n?'
 contexts:
   main:
-    # NSIS syntax ionside #nsis blocks only (thanks Keith Hall – https://github.com/keith-hall)
+    # NSIS syntax inside #nsis blocks only (thanks Keith Hall – https://github.com/keith-hall)
     # https://forum.sublimetext.com/t/apply-imported-syntax-on-sections-only/24207/2
     - match: '^\s*(#nsis)\b'
       captures:
