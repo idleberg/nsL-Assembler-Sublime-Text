@@ -26,4 +26,4 @@ NSL_JAR=$(printf %q "${PROGRAMS_UNIX%?}/NSIS/NSL/nsL.jar")
 echo "Running Java"
 echo
 
-eval java -jar "$NSL_JAR" /nopause /nomake $@
+eval java -jar "$NSL_JAR" /nomake $@
