@@ -31,7 +31,7 @@ if not "%~2"=="" goto loop
 
 :build
 if defined nsis_path (
-    java.exe -jar "%nsis_path%\NSL\nsL.jar" /nomake %args%
+    java.exe -jar "%nsis_path%\NSL\nsL.jar" /nomake /nopause %args%
 ) else (
     echo "Error: Make sure Java is in your PATH environmental variable and nsL Assembler is installed"
 )
