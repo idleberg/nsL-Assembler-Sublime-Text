@@ -10,8 +10,6 @@
 
 nsL is a new C-like programming language for writing [NSIS](http://nsis.sourceforge.net) installation wizards. The nsL assembler takes nsL code and translates it into original NSIS script which can then be compiled.
 
-**Note**: This package is compatible with Sublime Text 3 ([Build 3103](http://www.sublimetext.com/blog/articles/sublime-text-3-build-3103) or higher). Click [here](https://github.com/idleberg/sublime-nsl-assembler/tree/subl2) for a Sublime Text 2 version of this package.
-
 ![Screenshot](https://raw.github.com/idleberg/sublime-nsl-assembler/master/screenshot.png)
 
 *Screenshot using [Hopscotch](https://github.com/idleberg/Hopscotch) color scheme*
@@ -29,7 +27,7 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 ### Using Git
 
 1. Change to your Sublime Text `Packages` directory
-2. Clone repository `git clone https://github.com/idleberg/sublime-nsl-assembler.git 'nsL Assembler'`
+2. Clone repository `git clone --branch subl2 https://github.com/idleberg/sublime-nsl-assembler.git 'nsL Assembler'`
 
 ### Manual installation
 
