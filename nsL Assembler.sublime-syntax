@@ -42,7 +42,7 @@ contexts:
       scope: keyword.other.nsl
     - match: \w+\:\:\w+
       scope: support.class.nsl
-    - match: ^\s*(?i)(break|case|default|do|else|for|if|return|switch|while)(?=\s*\()
+    - match: ^\s*(?i)(break|case|default|do|else|for|if|return|switch|while)(?=\s*\()?
       scope: entity.name.section.nsl
     - match: \b(?i)(MB_DEFBUTTON1|MB_DEFBUTTON2|MB_DEFBUTTON3|MB_DEFBUTTON4|MB_ICONEXCLAMATION|MB_ICONINFORMATION|MB_ICONQUESTION|MB_ICONSTOP|MB_OK|MB_OKCANCEL|MB_RETRYCANCEL|MB_RIGHT|MB_RTLREADING|MB_SETFOREGROUND|MB_TOPMOST|MB_USERICON|MB_YESNO|MB_YESNOCANCEL|IDABORT|IDCANCEL|IDIGNORE|IDNO|IDOK|IDRETRY|IDYES)\b
       scope: entity.other.attribute-name.nsl
