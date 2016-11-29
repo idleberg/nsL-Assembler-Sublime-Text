@@ -67,7 +67,6 @@
             <string>keyword.other.nsl</string>
         </dict>
 
-
         <dict>
             <key>match</key>
             <string>\w+\:\:\w+</string>
