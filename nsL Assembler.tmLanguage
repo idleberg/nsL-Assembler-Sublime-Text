@@ -55,7 +55,7 @@
         
         <dict>
             <key>match</key>
-            <string>^\s*(?i)(uninstall\s)?(function|page|section)\b</string>
+            <string>^\s*(?i)(uninstall\s+)?(function|page|section)\b</string>
             <key>name</key>
             <string>keyword.control.nsl</string>
         </dict>
