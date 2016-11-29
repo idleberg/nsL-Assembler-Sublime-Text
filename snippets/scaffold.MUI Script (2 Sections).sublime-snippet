@@ -14,12 +14,12 @@ RequestExecutionLevel("${3:user}");
 InstallDir(\$PROGRAMFILES . "\\\\${4:${1}}");
 
 #nsis
-	// Pages ------------------------------------
+	# Pages ------------------------------------
 	!insertmacro MUI_PAGE_COMPONENTS 
 	!insertmacro MUI_PAGE_DIRECTORY
 	!insertmacro MUI_PAGE_INSTFILES
 
-	// Languages --------------------------------
+	# Languages --------------------------------
 	!insertmacro MUI_LANGUAGE "${5:English}"
 #nsisend
 
