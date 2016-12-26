@@ -75,14 +75,6 @@ contexts:
           pop: true
         - match: '{{escape_char}}'
           scope: constant.character.escape.nsl
-        - match: '{{user_var}}'
-          scope: variable.other.nsl
-        - match: '{{variable}}'
-          scope: variable.language.nsl
-        - match: '{{language}}'
-          scope: variable.other.nsl
-        - match: '{{definitions}}'
-          scope: constant.other.nsl
     - match: "'"
       captures:
         0: punctuation.definition.string.begin.nsl
@@ -94,14 +86,6 @@ contexts:
           pop: true
         - match: '{{escape_char}}'
           scope: constant.character.escape.nsl
-        - match: '{{user_var}}'
-          scope: variable.other.nsl
-        - match: '{{variable}}'
-          scope: variable.language.nsl
-        - match: '{{language}}'
-          scope: variable.other.nsl
-        - match: '{{definitions}}'
-          scope: constant.other.nsl
     - match: "`"
       captures:
         0: punctuation.definition.string.begin.nsl
@@ -113,14 +97,6 @@ contexts:
           pop: true
         - match: '{{escape_char}}'
           scope: constant.character.escape.nsl
-        - match: '{{user_var}}'
-          scope: variable.other.nsl
-        - match: '{{variable}}'
-          scope: variable.language.nsl
-        - match: '{{language}}'
-          scope: variable.other.nsl
-        - match: '{{definitions}}'
-          scope: constant.other.nsl
     - match: '{{line_comment}}'
       scope: comment.line.nsl
       captures:
